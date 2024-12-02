@@ -1,61 +1,76 @@
+<!-- Include Alpine.js for interactive functionality -->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Include Tailwind CSS for styling -->
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- FAQ Section with gray background -->
 <section class="bg-gray-100">
+<!-- Main container with maximum width, centered, with padding and shadow -->
 <div class="max-w-3xl mx-auto p-6 mt-10 bg-white rounded-lg shadow-lg" x-data="{ open: null }">
-    <!-- FAQ Item 1 -->
+    <!-- FAQ Item 1 - Services Overview -->
     <div class="mb-4">
+        <!-- Clickable question header with hover effects -->
         <div class="text-lg font-semibold cursor-pointer p-4 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors"
              @click="open === 1 ? open = null : open = 1">
             What services do you offer?
         </div>
+        <!-- Answer container with conditional display -->
         <div class="p-4 mt-2 bg-gray-50 border-l-4 border-blue-500 rounded-md"
              :class="{ 'block': open === 1, 'hidden': open !== 1 }">
             We offer a range of services, including custom web development, backend API development, and full-stack application design using modern technologies such as PHP, Go, Laravel, React, and more.
         </div>
     </div>
 
-    <!-- FAQ Item 2 -->
+    <!-- FAQ Item 2 - Getting Started Process -->
     <div class="mb-4">
+        <!-- Clickable question header -->
         <div class="text-lg font-semibold cursor-pointer p-4 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors"
              @click="open === 2 ? open = null : open = 2">
             How can I get started with your services?
         </div>
+        <!-- Answer container -->
         <div class="p-4 mt-2 bg-gray-50 border-l-4 border-blue-500 rounded-md"
              :class="{ 'block': open === 2, 'hidden': open !== 2 }">
             To get started, simply contact us via the contact form on our website or reach out directly through email. We will schedule a consultation to understand your needs and discuss the best approach for your project.
         </div>
     </div>
 
-    <!-- FAQ Item 3 -->
+    <!-- FAQ Item 3 - Technology Stack -->
     <div class="mb-4">
+        <!-- Clickable question header -->
         <div class="text-lg font-semibold cursor-pointer p-4 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors"
              @click="open === 3 ? open = null : open = 3">
             What technologies do you specialize in?
         </div>
+        <!-- Answer container -->
         <div class="p-4 mt-2 bg-gray-50 border-l-4 border-blue-500 rounded-md"
              :class="{ 'block': open === 3, 'hidden': open !== 3 }">
             Our team specializes in modern technologies such as PHP, Go, Laravel, React, Tailwind CSS, and Alpine.js. We also work with databases like MySQL and have experience with cloud services like AWS.
         </div>
     </div>
 
-    <!-- FAQ Item 4 -->
+    <!-- FAQ Item 4 - Pricing Information -->
     <div class="mb-4">
+        <!-- Clickable question header -->
         <div class="text-lg font-semibold cursor-pointer p-4 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors"
              @click="open === 4 ? open = null : open = 4">
             What is your pricing model?
         </div>
+        <!-- Answer container -->
         <div class="p-4 mt-2 bg-gray-50 border-l-4 border-blue-500 rounded-md"
              :class="{ 'block': open === 4, 'hidden': open !== 4 }">
             We offer customized pricing based on the scope and complexity of your project. After an initial consultation, we will provide you with a clear, transparent estimate.
         </div>
     </div>
 
-    <!-- FAQ Item 5 -->
+    <!-- FAQ Item 5 - Post-Project Support -->
     <div class="mb-4">
+        <!-- Clickable question header -->
         <div class="text-lg font-semibold cursor-pointer p-4 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors"
              @click="open === 5 ? open = null : open = 5">
             Do you offer support after the project is completed?
         </div>
+        <!-- Answer container -->
         <div class="p-4 mt-2 bg-gray-50 border-l-4 border-blue-500 rounded-md"
              :class="{ 'block': open === 5, 'hidden': open !== 5 }">
             Yes, we offer post-launch support to ensure that everything runs smoothly. We also provide maintenance packages to help with updates and improvements as needed.
@@ -64,4 +79,3 @@
 </div>
 
 </section>
-

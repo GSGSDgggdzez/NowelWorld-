@@ -1,3 +1,7 @@
+<!-- Include Alpine.js for dynamic functionality -->
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Include Tailwind CSS for styling -->
+<script src="https://cdn.tailwindcss.com"></script>
 <!-- Testimonials Section - Displays a collection of professional testimonials -->
 <section class="bg-gray-100 py-16" x-data="{ activeTestimonial: 0 }">
     <!-- Section heading -->
@@ -25,7 +29,7 @@
                   'Harold\'s commitment to learning multiple technologies at such a young age is commendable. His strong foundation in PHP Laravel and growing expertise in JavaScript frameworks shows great promise for his future in development.'
                 ][index]"></div>
                 <figure class="flex items-center">
-                  <img src="@OK\Image\bro.png" class="w-16 h-16 rounded-full object-cover mr-4" alt="Testimonial author" loading="lazy" />
+                  <img src="/Image/bro.png" class="w-16 h-16 rounded-full object-cover mr-4" alt="Testimonial author" loading="lazy" />
                   <figcaption>
                     <h3 class="font-semibold text-gray-900" x-text="[
                       'John Smith',
